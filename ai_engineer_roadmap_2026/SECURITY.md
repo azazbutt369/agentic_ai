@@ -13,8 +13,6 @@ The following versions are currently supported with security updates and mainten
 
 Always use the latest version of the repository.
 
----
-
 # Reporting a Vulnerability
 
 If you discover a security vulnerability, please do not create a public issue immediately.
@@ -37,8 +35,6 @@ Examples of security issues:
 * Sensitive data exposure
 * Supply chain vulnerabilities
 
----
-
 # What To Include
 
 When reporting a vulnerability, please provide:
@@ -46,8 +42,6 @@ When reporting a vulnerability, please provide:
 ## Summary
 
 A brief description of the issue.
-
----
 
 ## Impact
 
@@ -57,8 +51,6 @@ Explain:
 * Who is affected?
 * What is the potential damage?
 
----
-
 ## Reproduction Steps
 
 Provide:
@@ -67,8 +59,6 @@ Provide:
 2. Commands executed
 3. Expected behavior
 4. Actual behavior
-
----
 
 ## Proof of Concept
 
@@ -81,8 +71,6 @@ If available:
 
 Avoid publishing sensitive information publicly.
 
----
-
 # Response Process
 
 Maintainers will:
@@ -92,8 +80,6 @@ Maintainers will:
 3. Determine severity.
 4. Develop a fix if required.
 5. Publish remediation guidance.
-
----
 
 # Responsible Disclosure
 
@@ -105,8 +91,6 @@ Responsible disclosure helps protect:
 * Learners
 * Organizations using repository code
 * Community projects built from roadmap examples
-
----
 
 # Scope
 
@@ -122,8 +106,6 @@ This policy applies to:
 * RAG systems
 * Infrastructure manifests
 
----
-
 # Out of Scope
 
 The following are generally out of scope:
@@ -132,8 +114,6 @@ The following are generally out of scope:
 * Vulnerabilities in third-party services
 * Issues already publicly documented
 * Educational examples intentionally demonstrating attacks or defenses
-
----
 
 # Security Best Practices
 
@@ -154,8 +134,6 @@ Use:
 
 instead of hardcoded credentials.
 
----
-
 # AI-Specific Security Concerns
 
 Contributors should be aware of:
@@ -164,31 +142,21 @@ Contributors should be aware of:
 
 Validate external inputs before passing them to LLMs.
 
----
-
 ## Data Leakage
 
 Avoid exposing confidential or personally identifiable information.
-
----
 
 ## Tool Abuse
 
 Restrict tool permissions where appropriate.
 
----
-
 ## Model Security
 
 Verify model sources and dependencies.
 
----
-
 ## Supply Chain Risks
 
 Review third-party packages before introducing them into the repository.
-
----
 
 # Acknowledgements
 
