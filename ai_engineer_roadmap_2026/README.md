@@ -1,17 +1,15 @@
 # AI Engineer Roadmap 2026
 
 > A complete, project-driven roadmap for becoming a modern AI Engineer.
->
 > Learn Machine Learning, Deep Learning, LLM Engineering, RAG, AI Agents, MLOps, Multimodal AI, and AI Safety through executable projects, reproducible notebooks, and production-ready systems.
 
-[![GitHub stars](https://img.shields.io/github/stars/azazbutt369/ai-engineer-roadmap-2026?style=for-the-badge)](https://github.com/azazfarooqi/ai-engineer-roadmap/stargazers)
+[![GitHub last commit](https://img.shields.io/github/last-commit/azazbutt369/agentic_ai?style=for-the-badge)](https://github.com/azazbutt369/agentic_ai/commits/main)
 
-[![GitHub forks](https://img.shields.io/github/forks/azazfarooqi/ai-engineer-roadmap?style=for-the-badge)](https://github.com/azazfarooqi/ai-engineer-roadmap/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/azazbutt369/agentic_ai?style=for-the-badge)](https://github.com/azazbutt369/agentic_ai/issues)
 
-[![GitHub contributors](https://img.shields.io/github/contributors/azazfarooqi/ai-engineer-roadmap?style=for-the-badge)](https://github.com/azazfarooqi/ai-engineer-roadmap/graphs/contributors)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/azazbutt369/agentic_ai?style=for-the-badge)](https://github.com/azazbutt369/agentic_ai/pulls)
 
-[![License](https://img.shields.io/github/license/azazfarooqi/ai-engineer-roadmap?style=for-the-badge)](https://github.com/azazfarooqi/ai-engineer-roadmap/blob/main/LICENSE)
-
+[![GitHub repo size](https://img.shields.io/github/repo-size/azazbutt369/agentic_ai?style=for-the-badge)](https://github.com/azazbutt369/agentic_ai)
 ---
 
 ## Why This Repository Exists
