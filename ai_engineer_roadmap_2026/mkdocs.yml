@@ -1,0 +1,48 @@
+site_name: AI Engineer Roadmap 2026
+site_description: A project-driven roadmap for becoming a modern AI Engineer.
+site_author: Azaz Butt
+
+theme:
+name: material
+
+features:
+- navigation.instant
+- navigation.tabs
+- navigation.sections
+- navigation.top
+- search.highlight
+- search.share
+- content.code.copy
+
+plugins:
+
+* search
+* awesome-pages
+* git-revision-date-localized
+
+markdown_extensions:
+
+* admonition
+* attr_list
+* md_in_html
+* tables
+* toc:
+  permalink: true
+
+nav:
+
+* Home: index.md
+* Roadmap:
+
+  * Foundations: foundations.md
+  * Machine Learning: machine-learning.md
+  * Deep Learning: deep-learning.md
+  * LLM Engineering: llm-engineering.md
+  * RAG: rag.md
+  * Agents: agents.md
+  * LLMOps: llmops.md
+  * Multimodal AI: multimodal.md
+  * AI Safety: safety.md
+* Projects: projects.md
+* Resources: resources.md
+* Contributing: contributing.md
