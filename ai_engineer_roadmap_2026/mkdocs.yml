@@ -35,9 +35,9 @@ nav:
 * Roadmap:
 
   * Foundations: foundations.md
-  * Machine Learning: machine-learning.md
-  * Deep Learning: deep-learning.md
-  * LLM Engineering: llm-engineering.md
+  * Machine Learning: machine_learning.md
+  * Deep Learning: deep_learning.md
+  * LLM Engineering: llm_engineering.md
   * RAG: rag.md
   * Agents: agents.md
   * LLMOps: llmops.md
