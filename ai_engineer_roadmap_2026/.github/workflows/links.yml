@@ -1,0 +1,43 @@
+# ============================================================
+# Link Checker — Validate all URLs in documentation
+# ============================================================
+# Runs weekly to catch dead links.
+
+name: Link Checker
+
+on:
+  schedule:
+    # Run every Monday at 6:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-links:
+    name: 🔗 Check Links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Check links in documentation
+        run: python scripts/check_links.py
+        continue-on-error: true
+
+      - name: Upload link check results
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-check-results
+          path: reports/link_check.json
