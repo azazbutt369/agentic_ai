@@ -1,0 +1,115 @@
+name: 🐛 Bug Report
+description: Report a bug in a notebook, project, or documentation
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! Please fill out this form as completely as possible.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected Area
+      description: Which part of the repository is affected?
+      options:
+        - Notebook (01 — Foundations)
+        - Notebook (02 — ML Fundamentals)
+        - Notebook (03 — Deep Learning)
+        - Notebook (04 — Generative AI)
+        - Notebook (05 — MLOps & LLMOps)
+        - Notebook (06 — Advanced Paradigms)
+        - Project (01 — Semantic Search Engine)
+        - Project (02 — RAG Chatbot)
+        - Project (03 — AI Agent Framework)
+        - Project (04 — LLM Fine-Tuning Pipeline)
+        - Project (05 — Model Evaluation Suite)
+        - Project (06 — Multimodal Content Analyzer)
+        - Project (07 — Production LLM API)
+        - Documentation
+        - Docker / Infrastructure
+        - CI/CD / Scripts
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: file
+    attributes:
+      label: Affected File(s)
+      description: Which specific file(s) contain the bug?
+      placeholder: "e.g., notebooks/03-deep-learning/05-transformers-attention.ipynb"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: "Describe the bug..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Open notebook '...'
+        2. Run cell #...
+        3. See error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened. Include error messages and tracebacks.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Please provide your environment details.
+      value: |
+        - **OS**: [e.g., Windows 11, macOS 14, Ubuntu 24.04]
+        - **Python version**: [e.g., 3.11.9]
+        - **PyTorch version**: [e.g., 2.3.0]
+        - **CUDA version**: [e.g., 12.4, or N/A for CPU]
+        - **Running via**: [e.g., Jupyter Lab, VS Code, Google Colab, Docker]
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or logs about the problem here.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched the [existing issues](https://github.com/YOUR_USERNAME/ai-engineer-roadmap-2026/issues) and this bug has not been reported before
+          required: true
+        - label: I am using the latest version from the `main` branch
+          required: true
+        - label: I have included the full error traceback (if applicable)
+          required: false
