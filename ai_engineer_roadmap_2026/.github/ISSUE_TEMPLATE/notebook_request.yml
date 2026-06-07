@@ -1,0 +1,123 @@
+name: 📓 Notebook Request
+description: Request a new educational notebook
+title: "[Notebook]: "
+labels: ["notebook", "enhancement", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Want to see a new notebook added to the curriculum? Tell us about it!
+        Please review the [existing notebook index](README.md#-notebook-curriculum) first to avoid duplicates.
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Roadmap Phase
+      description: Which phase of the roadmap does this notebook belong to?
+      options:
+        - "Phase 1: Foundations"
+        - "Phase 2: ML Fundamentals"
+        - "Phase 3: Deep Learning & Neural Networks"
+        - "Phase 4: Generative AI & LLM Engineering"
+        - "Phase 5: MLOps & LLMOps"
+        - "Phase 6: Advanced Paradigms"
+        - "New / Cross-Phase"
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Notebook Title
+      description: What should the notebook be called?
+      placeholder: "e.g., Mixture of Experts (MoE) Architectures"
+    validations:
+      required: true
+
+  - type: textarea
+    id: objectives
+    attributes:
+      label: Learning Objectives
+      description: What should learners be able to do after completing this notebook?
+      placeholder: |
+        By the end of this notebook, learners will be able to:
+        - Objective 1
+        - Objective 2
+        - Objective 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: topics
+    attributes:
+      label: Topics to Cover
+      description: List the key topics, concepts, or techniques this notebook should cover.
+      placeholder: |
+        - Topic 1
+        - Topic 2
+        - ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: gap
+    attributes:
+      label: Gap Analysis
+      description: Why is this notebook needed? What gap in the curriculum does it fill?
+      placeholder: "This topic is important because... / The current curriculum doesn't cover..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Target Difficulty
+      description: What difficulty level should this notebook target?
+      options:
+        - "🟢 Beginner — No prior knowledge required"
+        - "🟡 Intermediate — Requires foundational understanding"
+        - "🟠 Advanced — Requires solid intermediate skills"
+        - "🔴 Expert — Production-level, cutting-edge topics"
+    validations:
+      required: true
+
+  - type: textarea
+    id: datasets
+    attributes:
+      label: Suggested Datasets / Resources
+      description: Are there specific free datasets, papers, or resources that should be used?
+      placeholder: |
+        - Dataset: HuggingFace `...`
+        - Paper: "Attention is All You Need" (https://arxiv.org/abs/1706.03762)
+        - Library: `...`
+
+  - type: dropdown
+    id: willing
+    attributes:
+      label: Willingness to Contribute
+      description: Would you be willing to write this notebook?
+      options:
+        - "Yes, I'd like to write it!"
+        - "I can help, but I'd need guidance"
+        - "No, I'm just requesting it"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other context, references, or examples.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I have checked the [notebook index](README.md#-notebook-curriculum) and this topic is not already covered
+          required: true
+        - label: This notebook uses only free, open-source tools (no paid API keys)
+          required: true
+        - label: I understand that notebooks must follow the [notebook standards](CONTRIBUTING.md#notebook-standards)
+          required: true
