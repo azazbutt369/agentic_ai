@@ -1,0 +1,104 @@
+name: 📚 Resource Submission
+description: Submit a learning resource to be added to RESOURCES.md
+title: "[Resource]: "
+labels: ["resource", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found a great free learning resource? Submit it here to help other learners!
+        Please check [RESOURCES.md](RESOURCES.md) first to make sure it's not already listed.
+
+  - type: input
+    id: resource_name
+    attributes:
+      label: Resource Name
+      description: The title of the resource
+      placeholder: "e.g., 3Blue1Brown — Essence of Linear Algebra"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Direct link to the resource
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Resource Type
+      options:
+        - "🎥 Video / YouTube Channel"
+        - "📘 Book (free or free chapter)"
+        - "📝 Blog Post / Article"
+        - "🎓 Course (free)"
+        - "📄 Research Paper"
+        - "🔧 Tool / Library"
+        - "💻 GitHub Repository"
+        - "🎙️ Podcast"
+        - "📊 Dataset"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Relevant Roadmap Phase
+      description: Which phase does this resource best align with?
+      options:
+        - "Phase 1: Foundations (Math, Python, Data)"
+        - "Phase 2: ML Fundamentals (scikit-learn, Classical ML)"
+        - "Phase 3: Deep Learning (PyTorch, CNNs, Transformers)"
+        - "Phase 4: Generative AI (LLMs, RAG, Agents, Fine-Tuning)"
+        - "Phase 5: MLOps (Docker, Serving, Monitoring)"
+        - "Phase 6: Advanced (Multimodal, Edge AI, Safety)"
+        - "General / Cross-Phase"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Resource Tier
+      description: How essential is this resource?
+      options:
+        - "⭐ Essential — Must-watch/read for this topic"
+        - "📎 Supplementary — Great for deeper exploration"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Why This Resource?
+      description: Brief description of why this resource is valuable and what makes it stand out.
+      placeholder: "This resource is valuable because..."
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author / Creator
+      description: Who created this resource?
+      placeholder: "e.g., Andrej Karpathy"
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: This resource is **free** or has a substantial free tier
+          required: true
+        - label: This resource is **actively maintained** (for tools/courses) or **still relevant** (for articles/papers)
+          required: true
+        - label: I have verified this resource is **not already listed** in [RESOURCES.md](RESOURCES.md)
+          required: true
+        - label: This resource does **not** require paid API keys to follow along
+          required: true
