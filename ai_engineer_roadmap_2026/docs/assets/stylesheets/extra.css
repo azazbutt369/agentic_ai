@@ -1,0 +1,55 @@
+/* AI Engineer Roadmap 2026 — Custom Styles */
+
+/* Phase-specific color coding */
+:root {
+  --phase-1-color: #1565C0;
+  --phase-2-color: #2E7D32;
+  --phase-3-color: #E65100;
+  --phase-4-color: #C62828;
+  --phase-5-color: #6A1B9A;
+  --phase-6-color: #00695C;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better code block styling */
+.md-typeset code {
+  font-size: 0.85em;
+}
+
+/* Highlight important content */
+.md-typeset .admonition.tip {
+  border-color: var(--phase-4-color);
+}
+
+/* Custom badge styling */
+.badge {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  border-radius: 0.25em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.badge--beginner { background-color: #4CAF50; color: white; }
+.badge--intermediate { background-color: #FFC107; color: #333; }
+.badge--advanced { background-color: #FF9800; color: white; }
+.badge--expert { background-color: #F44336; color: white; }
+
+/* Table improvements */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--md-typeset-table-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-default-fg-color--lightest);
+}
