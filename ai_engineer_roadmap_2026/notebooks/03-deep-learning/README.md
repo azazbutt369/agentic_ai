@@ -2,45 +2,38 @@
 
 > **Duration**: 4–5 weeks · **Difficulty**: 🟠 Advanced · **Prerequisites**: Phase 1 (Foundations) & Phase 2 (ML Fundamentals)
 
-Master representation learning and modern deep learning architectures across both industry-standard frameworks: **PyTorch** and **TensorFlow / Keras**. This phase bridges classical machine learning with foundation models, exploring the design philosophies, execution paradigms, performance tradeoffs, and production use cases of both ecosystems.
+Master representation learning and modern deep learning architectures across **both** industry-standard frameworks: **PyTorch** and **TensorFlow / Keras**. This phase features **separate, dedicated notebooks** for each framework across every domain, providing specialized mastery of both research workflows and enterprise edge/serving deployment.
 
 ---
 
 ## 📓 Notebook Curriculum
 
-| # | Notebook | Topic | Key Concepts | Status |
-|:-:|----------|-------|--------------|:------:|
-| 1 | [`01-framework-fundamentals-pytorch-vs-tensorflow.ipynb`](01-framework-fundamentals-pytorch-vs-tensorflow.ipynb) | **PyTorch vs. TensorFlow Fundamentals** | Dynamic DAG (Autograd) vs. `GradientTape` / `@tf.function`, `nn.Module` vs. `keras.Model`, data pipelines (`DataLoader` vs. `tf.data`), side-by-side training loop comparison, pros & cons | 📋 Planned |
-| 2 | [`02-neural-networks-from-scratch.ipynb`](02-neural-networks-from-scratch.ipynb) | **Neural Networks from Scratch (NumPy)** | Pure NumPy matrix calculus backpropagation, activations (ReLU, GELU, Swish), Softmax + Cross-Entropy gradient derivation, gradient verification against both PyTorch Autograd & TensorFlow `GradientTape` | 📋 Planned |
-| 3 | [`03-cnns-image-classification-pytorch-tf.ipynb`](03-cnns-image-classification-pytorch-tf.ipynb) | **CNNs, Vision Transfer Learning & Edge Deployment** | Convolutions, pooling, receptive fields, PyTorch `torchvision` vs. Keras vision models, transfer learning with ResNet, deployment benchmarks: TorchScript/ONNX vs. TensorFlow Lite (`.tflite`) | 📋 Planned |
-| 4 | [`04-rnns-sequence-modeling-pytorch-tf.ipynb`](04-rnns-sequence-modeling-pytorch-tf.ipynb) | **Sequence Modeling with RNNs & LSTMs** | Recurrent unrolling, vanishing gradients, LSTM memory gates, GRUs, PyTorch `nn.LSTM` vs. Keras `layers.LSTM`, masking, time-series forecasting, streaming API latency tradeoffs | 📋 Planned |
-| 5 | [`05-transformers-attention-pytorch-tf.ipynb`](05-transformers-attention-pytorch-tf.ipynb) | **Transformers & Multi-Head Attention** | Scaled Dot-Product Attention from scratch, Multi-Head Attention in PyTorch and TensorFlow, Positional Encodings (Sinusoidal & RoPE), Transformer Encoder block, generative LLM ecosystem adoption analysis | 📋 Planned |
-| 6 | [`06-training-best-practices-pytorch-tf.ipynb`](06-training-best-practices-pytorch-tf.ipynb) | **Production Training, Acceleration & Deployment** | Cosine LR with warmup, AdamW vs. Adam, gradient clipping & accumulation, mixed precision (`torch.amp` vs. `tf.keras.mixed_precision`), XLA compilation, checkpointing, serving matrix (TorchServe, vLLM, TF Serving, TFLite) | 📋 Planned |
+| # | Notebook | Framework | Domain | Key Concepts | Status |
+|:-:|----------|:---------:|--------|--------------|:------:|
+| **01** | [`01-pytorch-fundamentals.ipynb`](01-pytorch-fundamentals.ipynb) | **PyTorch** | Fundamentals | Tensors, dynamic Autograd graphs, `.backward()`, `nn.Module`, optimizers, custom training loops, `DataLoader` | 📋 Planned |
+| **02** | [`02-tensorflow-fundamentals.ipynb`](02-tensorflow-fundamentals.ipynb) | **TensorFlow** | Fundamentals | Tensors, `tf.Variable`, `GradientTape`, `@tf.function` & XLA graph compilation, Keras APIs, `tf.data` | 📋 Planned |
+| **03** | [`03-neural-networks-from-scratch.ipynb`](03-neural-networks-from-scratch.ipynb) | **NumPy** | Math Foundations | Deep MLP from scratch in pure NumPy, manual matrix calculus backpropagation, dual gradient verification against PyTorch & TF | 📋 Planned |
+| **04** | [`04-cnns-computer-vision-pytorch.ipynb`](04-cnns-computer-vision-pytorch.ipynb) | **PyTorch** | Computer Vision | 2D Convolutions, pooling, ResNet transfer learning, progressive unfreezing, Grad-CAM, ONNX export | 📋 Planned |
+| **05** | [`05-cnns-computer-vision-tensorflow.ipynb`](05-cnns-computer-vision-tensorflow.ipynb) | **TensorFlow** | Vision & Edge | Keras Conv2D, MobileNetV2 transfer learning, **TensorFlow Lite (`.tflite`) conversion & INT8 quantization** | 📋 Planned |
+| **06** | [`06-rnns-sequence-modeling-pytorch.ipynb`](06-rnns-sequence-modeling-pytorch.ipynb) | **PyTorch** | Sequences | Recurrent unrolling, vanishing gradients, `nn.LSTM` / `nn.GRU`, hidden states, packed padded sequences, time series | 📋 Planned |
+| **07** | [`07-rnns-sequence-modeling-tensorflow.ipynb`](07-rnns-sequence-modeling-tensorflow.ipynb) | **TensorFlow** | Sequences | Keras `LSTM`, `GRU`, `Masking` layers for variable length, bidirectional models, streaming sequence inference | 📋 Planned |
+| **08** | [`08-transformers-attention-pytorch.ipynb`](08-transformers-attention-pytorch.ipynb) | **PyTorch** | Transformers | Scaled Dot-Product Attention from scratch, Multi-Head Attention (MHA), RoPE, full Transformer Encoder, causal masking | 📋 Planned |
+| **09** | [`09-transformers-attention-tensorflow.ipynb`](09-transformers-attention-tensorflow.ipynb) | **TensorFlow** | Transformers | Keras `MultiHeadAttention` layer, building Transformer Blocks in Keras, positional embeddings, KerasHub models | 📋 Planned |
+| **10** | [`10-training-deployment-pytorch.ipynb`](10-training-deployment-pytorch.ipynb) | **PyTorch** | Production | Cosine LR with Warmup, AdamW, gradient clipping & accumulation, mixed precision (`torch.amp`), checkpointing, TorchServe | 📋 Planned |
+| **11** | [`11-training-deployment-tensorflow.ipynb`](11-training-deployment-tensorflow.ipynb) | **TensorFlow** | Production | `@tf.function(jit_compile=True)` XLA compiler, `CosineDecay`, mixed precision, SavedModel, TF Serving (gRPC/REST) & TF.js | 📋 Planned |
 
 ---
 
-## ⚖️ Framework Tradeoffs: PyTorch vs. TensorFlow
+## 🗺️ Learning Path Options
 
 ```
-┌────────────────────────────────────────────────────────┐
-│                        PYTORCH                         │
-│  • Leader in Generative AI, LLMs & Foundation Research │
-│  • Dynamic Eager Autograd (Intuitive Pythonic logic)   │
-│  • Ecosystem: Hugging Face, vLLM, DeepSpeed, FSDP      │
-│  • Serving: TorchServe, Triton, TensorRT-LLM, ONNX     │
-└────────────────────────────────────────────────────────┘
-                           ▲
-                           │ Core Mathematical Theory (NumPy)
-                           ▼
-┌────────────────────────────────────────────────────────┐
-│                  TENSORFLOW / KERAS                    │
-│  • Leader in Enterprise Serving & Industrial Pipelines │
-│  • Static Graph Optimization via @tf.function & XLA    │
-│  • Mobile & Edge: TensorFlow Lite (.tflite)            │
-│  • In-Browser Inference: TensorFlow.js                 │
-│  • Multi-Backend Abstraction via Keras 3               │
-└────────────────────────────────────────────────────────┘
+                    ┌──▶ [PyTorch Track] ────▶ 01 ──▶ 04 (Vision) ──▶ 06 (RNN) ──▶ 08 (Transformer) ──▶ 10 (Serving)
+03. Math (NumPy) ───┤
+                    └──▶ [TensorFlow Track] ─▶ 02 ──▶ 05 (TFLite) ──▶ 07 (RNN) ──▶ 09 (Transformer) ──▶ 11 (Serving)
 ```
+
+- **Comparative Path (Recommended)**: Learn each concept pair side-by-side (`01 & 02`, `04 & 05`, `06 & 07`, `08 & 09`, `10 & 11`) to master framework tradeoffs.
+- **Track-Specific Path**: Complete the entire PyTorch track for generative AI/LLM specialization, or the TensorFlow track for enterprise serving/edge specialization.
 
 ---
 
