@@ -2,7 +2,7 @@
 
 # 📓 Notebook Curriculum
 
-**35 executable Jupyter notebooks covering the complete AI Engineer learning path.**
+**40 executable Jupyter notebooks covering the complete AI Engineer learning path.**
 
 Every notebook runs top-to-bottom, uses real datasets, and teaches production-quality skills.
 
@@ -16,11 +16,11 @@ Every notebook runs top-to-bottom, uses real datasets, and teaches production-qu
 |-------|:---------:|----------|:----------:|-------------|
 | [01 — Foundations](01-foundations/) | 7 | 3–4 weeks | 🟢 | Math, Python, NumPy, Pandas, Git |
 | [02 — ML Fundamentals](02-ml-fundamentals/) | 6 | 3–4 weeks | 🟡 | Supervised/Unsupervised ML, scikit-learn |
-| [03 — Deep Learning](03-deep-learning/) | 6 | 4–5 weeks | 🟠 | PyTorch, CNNs, RNNs, Transformers |
+| [03 — Deep Learning](03-deep-learning/) | 11 | 4–5 weeks | 🟠 | PyTorch & TensorFlow, CNNs, RNNs, Transformers, Edge INT8 |
 | [04 — Generative AI](04-generative-ai/) | 9 | 6–8 weeks | 🟠–🔴 | LLMs, RAG, Agents, Fine-Tuning, DPO |
 | [05 — MLOps & LLMOps](05-mlops-llmops/) | 4 | 3–4 weeks | 🟠 | Docker, vLLM, Monitoring, CI/CD |
 | [06 — Advanced Paradigms](06-advanced-paradigms/) | 3 | 2–3 weeks | 🔴 | Multimodal, Edge AI, Safety |
-| **Total** | **35** | **22–28 wks** | | |
+| **Total** | **40** | **22–28 wks** | | |
 
 ---
 
