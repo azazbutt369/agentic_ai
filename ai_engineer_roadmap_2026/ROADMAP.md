@@ -309,7 +309,7 @@ You will be orchestrating Large Language Models to perform complex reasoning tas
 
 ### Prompt Engineering & API Integration
 
-- [ ] **Prompt Engineering** 🟡
+- [x] **Prompt Engineering** 🟡
   - Zero-Shot, Few-Shot Prompting
   - Chain-of-Thought (CoT) reasoning
   - Tree of Thoughts
@@ -317,76 +317,76 @@ You will be orchestrating Large Language Models to perform complex reasoning tas
   - System prompts and instruction design
   - 📓 [`01-prompt-engineering.ipynb`](notebooks/04-generative-ai/01-prompt-engineering.ipynb)
 
-- [ ] **Local LLMs with Ollama** 🟡
-  - Installing and running Ollama
-  - Running Llama, Mistral, Phi locally
-  - API integration (REST + Python client)
-  - Comparing model sizes and performance
-  - *Zero API costs — everything runs on your machine*
-  - 📓 [`02-local-llms-ollama.ipynb`](notebooks/04-generative-ai/02-local-llms-ollama.ipynb)
+- [x] **Local LLMs & High-Throughput Inference** 🟡
+  - Open-weights LLMs (Llama, Mistral, Phi)
+  - KV Cache mechanics ($O(S^2) \to O(S)$ acceleration)
+  - Sampling: Temperature, Top-k, Top-p, Min-p
+  - PTQ quantization & StreamingLLM attention sinks
+  - *Zero API costs — runs locally on consumer hardware*
+  - 📓 [`02-local-llms-inference.ipynb`](notebooks/04-generative-ai/02-local-llms-inference.ipynb)
 
 ### Vector Databases & RAG
 
-- [ ] **Embeddings & Vector Databases** 🟠
-  - Text embeddings: BAAI/bge, sentence-transformers
-  - Vector DB fundamentals: indexing, similarity search
-  - Chroma and Qdrant: setup, insertion, querying
+- [x] **Embeddings & Vector Databases** 🟠
+  - Text embeddings & metric space geometry
+  - Vector DB fundamentals: IndexFlatIP, IndexIVFFlat, IndexHNSWFlat
+  - Centroid balance diagnostics, greedy routing & deduplication
   - 📓 [`03-embeddings-vector-dbs.ipynb`](notebooks/04-generative-ai/03-embeddings-vector-dbs.ipynb)
 
-- [ ] **RAG Fundamentals** 🟠
+- [x] **RAG Fundamentals** 🟠
   - Document loading and parsing
   - Chunking strategies (fixed, recursive, semantic)
   - Retrieval pipeline: embed → search → generate
-  - End-to-end RAG with LangChain + Ollama
+  - End-to-end RAG with context injection & RAGAS evaluation
   - 📓 [`04-rag-fundamentals.ipynb`](notebooks/04-generative-ai/04-rag-fundamentals.ipynb)
 
-- [ ] **Advanced RAG Patterns** 🔴
+- [x] **Advanced RAG Patterns** 🔴
   - Semantic routing
   - Re-ranking with Cross-Encoders
-  - Hybrid search (dense + sparse)
-  - GraphRAG: Knowledge Graphs + Vector Search
+  - Hybrid search (BM25 + Dense Reciprocal Rank Fusion)
+  - HyDE query expansion & Lightweight GraphRAG
   - 📓 [`05-advanced-rag-patterns.ipynb`](notebooks/04-generative-ai/05-advanced-rag-patterns.ipynb)
 
 ### Agentic Systems
 
-- [ ] **AI Agents & Tool Use** 🟠
-  - Function/tool calling
-  - ReAct agent implementation
-  - Building custom tools
-  - LangChain agents
+- [x] **AI Agents & Tool Use** 🟠
+  - Function/tool calling with JSON Schema
+  - ReAct agent implementation from scratch
+  - Building AST-safe math, code & retrieval tools
+  - Error reflection and tiered memory management
   - 📓 [`06-ai-agents-tool-use.ipynb`](notebooks/04-generative-ai/06-ai-agents-tool-use.ipynb)
 
-- [ ] **Multi-Agent Systems** 🔴
-  - AutoGen: multi-agent conversations
-  - CrewAI: role-based agent teams
-  - LangGraph: stateful agent workflows
-  - Memory management (short-term vs. long-term)
-  - Multi-agent debate and collaboration patterns
+- [x] **Multi-Agent Systems** 🔴
+  - LangGraph: stateful directed agent workflows
+  - Supervisor pattern orchestrating specialized teams
+  - Self-correcting critique-refactor cycles
+  - Human-in-the-loop breakpoint gates
+  - Multi-agent debate and consensus synthesis
   - 📓 [`07-multi-agent-systems.ipynb`](notebooks/04-generative-ai/07-multi-agent-systems.ipynb)
 
 ### Fine-Tuning & Alignment
 
-- [ ] **Fine-Tuning with LoRA** 🟠
+- [x] **Fine-Tuning with LoRA** 🟠
   - Parameter-Efficient Fine-Tuning (PEFT)
-  - LoRA and QLoRA — train on consumer GPUs
-  - Dataset preparation for instruction tuning
-  - HuggingFace TRL + PEFT workflow
+  - LoRA low-rank decomposition ($W_0 + \frac{\alpha}{r} B A$)
+  - ChatML masked instruction dataset formatting
+  - HuggingFace PEFT SFT training & zero-latency `merge_and_unload`
   - 📓 [`08-fine-tuning-lora.ipynb`](notebooks/04-generative-ai/08-fine-tuning-lora.ipynb)
 
-- [ ] **DPO Alignment** 🔴
-  - Direct Preference Optimization
-  - Creating preference datasets
-  - DPO vs. RLHF — why DPO is the 2026 standard
-  - Evaluating alignment quality
+- [x] **DPO Alignment** 🔴
+  - Direct Preference Optimization (DPO) vs RLHF
+  - Bradley-Terry preference model and pairwise curation
+  - Implicit reward margin tracking and KL divergence guards
+  - Constitutional AI critique-and-revise & length regularization
   - 📓 [`09-dpo-alignment.ipynb`](notebooks/04-generative-ai/09-dpo-alignment.ipynb)
 
 ### ✅ Phase 4 Completion Checklist
 
-- [ ] Build a RAG system that answers questions from your own documents
-- [ ] Create an agent that uses tools (web search, calculator, code execution)
-- [ ] Fine-tune an open-weight model on a custom dataset using LoRA
-- [ ] Implement a multi-agent system where agents collaborate on a task
-- [ ] Explain the difference between RAG, fine-tuning, and prompt engineering — and when to use each
+- [x] Build a RAG system that answers questions from your own documents
+- [x] Create an agent that uses tools (web search, calculator, code execution)
+- [x] Fine-tune an open-weight model on a custom dataset using LoRA
+- [x] Implement a multi-agent system where agents collaborate on a task
+- [x] Explain the difference between RAG, fine-tuning, and prompt engineering — and when to use each
 
 ---
 
