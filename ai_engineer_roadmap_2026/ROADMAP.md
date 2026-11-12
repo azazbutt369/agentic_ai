@@ -439,21 +439,21 @@ Building a model is only half the job. The other half is getting it reliably int
 
 To stand out as a Senior AI Engineer, you must look toward the frontier.
 
-- [ ] **Multimodal AI** 🔴
+- [x] **Multimodal AI** 🔴
   - Models that understand text + audio + image + video simultaneously
   - Engineering pipelines for interleaved multimodal inputs
   - Streaming audio and video processing
   - *Models: GPT-4o architecture concepts, open-source vision-language models*
   - 📓 [`01-multimodal-ai.ipynb`](notebooks/06-advanced-paradigms/01-multimodal-ai.ipynb)
 
-- [ ] **Edge AI & Small Language Models** 🟠
+- [x] **Edge AI & Small Language Models** 🟠
   - Running AI on laptops, phones, and IoT devices
   - Models: Phi-4, Llama-3-8B
   - Quantization: GGUF, AWQ, EXL2
   - BitNet architectures (1.58-bit)
   - 📓 [`02-edge-ai-quantization.ipynb`](notebooks/06-advanced-paradigms/02-edge-ai-quantization.ipynb)
 
-- [ ] **AI Safety & Security** 🔴
+- [x] **AI Safety & Security** 🔴
   - Red teaming: probing models for vulnerabilities
   - Defending against prompt injection and jailbreaks
   - Data privacy: guardrails and PII redaction
@@ -462,10 +462,10 @@ To stand out as a Senior AI Engineer, you must look toward the frontier.
 
 ### ✅ Phase 6 Completion Checklist
 
-- [ ] Build a pipeline that processes both text and images
-- [ ] Quantize a model to 4-bit and benchmark it against the full-precision version
-- [ ] Red team an LLM and document the vulnerabilities found
-- [ ] Implement PII redaction in an LLM pipeline
+- [x] Build a pipeline that processes both text and images
+- [x] Quantize a model to 4-bit and benchmark it against the full-precision version
+- [x] Red team an LLM and document the vulnerabilities found
+- [x] Implement PII redaction in an LLM pipeline
 
 ---
 
