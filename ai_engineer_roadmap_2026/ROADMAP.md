@@ -396,40 +396,40 @@ You will be orchestrating Large Language Models to perform complex reasoning tas
 
 Building a model is only half the job. The other half is getting it reliably into production.
 
-- [ ] **Docker for ML** 🟡
+- [x] **Docker for ML** 🟡
   - Containerizing ML applications
   - Multi-stage builds for smaller images
   - Docker Compose for multi-service stacks
   - GPU passthrough with NVIDIA Container Toolkit
   - 📓 [`01-docker-for-ml.ipynb`](notebooks/05-mlops-llmops/01-docker-for-ml.ipynb)
 
-- [ ] **Model Serving with vLLM** 🟠
+- [x] **Model Serving with vLLM** 🟠
   - vLLM: PagedAttention, continuous batching
-  - HuggingFace TGI
-  - FastAPI wrapper for model endpoints
-  - Load testing and benchmarking
+  - HuggingFace TGI & ONNX Runtime comparison
+  - FastAPI wrapper for OpenAI-compatible endpoints
+  - Load testing and SLO Goodput benchmarking
   - 📓 [`02-model-serving-vllm.ipynb`](notebooks/05-mlops-llmops/02-model-serving-vllm.ipynb)
 
-- [ ] **Monitoring & Observability** 🟠
-  - Model drift detection
-  - Latency tracking and alerting
-  - Logging pipelines for LLM applications
-  - Token usage tracking and cost monitoring
+- [x] **Monitoring & Observability** 🟠
+  - Model drift detection (PSI, KS Test, Embedding Centroid Shift)
+  - Latency tracking and Prometheus alerting
+  - Structured JSON logging pipelines for LLM applications
+  - Token usage tracking and budget circuit breakers
   - 📓 [`03-monitoring-observability.ipynb`](notebooks/05-mlops-llmops/03-monitoring-observability.ipynb)
 
-- [ ] **CI/CD Pipelines** 🟠
+- [x] **CI/CD Pipelines** 🟠
   - GitHub Actions for ML workflows
-  - Automated testing for notebooks and models
-  - Deployment automation
-  - Model registry and versioning
+  - Automated `pytest` & `nbformat` testing for notebooks and models
+  - Canary deployment & statistical auto-rollback
+  - SHA-256 Model registry and semantic versioning
   - 📓 [`04-ci-cd-pipelines.ipynb`](notebooks/05-mlops-llmops/04-ci-cd-pipelines.ipynb)
 
 ### ✅ Phase 5 Completion Checklist
 
-- [ ] Containerize an ML application and deploy it with Docker Compose
-- [ ] Serve a model with vLLM and handle concurrent requests
-- [ ] Set up monitoring for a deployed model with alerting on drift
-- [ ] Create a GitHub Actions workflow that tests and deploys a model
+- [x] Containerize an ML application and deploy it with Docker Compose
+- [x] Serve a model with vLLM and handle concurrent requests
+- [x] Set up monitoring for a deployed model with alerting on drift
+- [x] Create a GitHub Actions workflow that tests and deploys a model
 
 ---
 

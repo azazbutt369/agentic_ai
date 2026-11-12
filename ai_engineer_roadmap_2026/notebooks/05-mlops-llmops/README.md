@@ -9,10 +9,10 @@
 
 | # | Notebook | Domain | Key Concepts | Status |
 |:--:|----------|--------|--------------|:------:|
-| **01** | [`01-docker-for-ml.ipynb`](01-docker-for-ml.ipynb) | Containerization | Multi-stage Dockerfiles, Copy-on-Write layer caching, `.dockerignore`, Docker Compose stacks, NVIDIA GPU passthrough, CIS container security linting | 📋 In Progress |
-| **02** | [`02-model-serving-vllm.ipynb`](02-model-serving-vllm.ipynb) | LLM & Model Serving | PagedAttention KV block allocation, copy-on-write prefix sharing, continuous iteration-level batching, FastAPI OpenAI-compatible API, ONNX Runtime & load testing | 📋 In Progress |
-| **03** | [`03-monitoring-observability.ipynb`](03-monitoring-observability.ipynb) | Observability & Drift | Prometheus `Counter`/`Histogram`/`Gauge` registries, structured JSON logging, token/cost governance, PSI, Kolmogorov-Smirnov test, embedding centroid drift | 📋 In Progress |
-| **04** | [`04-ci-cd-pipelines.ipynb`](04-ci-cd-pipelines.ipynb) | CI/CD & Registry | GitHub Actions ML workflows, `pytest` behavioral invariance & latency tests, `nbformat` CI quality gates, SHA-256 Model Registry, Canary auto-rollback | 📋 In Progress |
+| **01** | [`01-docker-for-ml.ipynb`](01-docker-for-ml.ipynb) | Containerization | Multi-stage Dockerfiles, Copy-on-Write layer caching, `.dockerignore`, Docker Compose stacks, NVIDIA GPU passthrough, CIS container security linting | ✅ Complete |
+| **02** | [`02-model-serving-vllm.ipynb`](02-model-serving-vllm.ipynb) | LLM & Model Serving | PagedAttention KV block allocation, copy-on-write prefix sharing, continuous iteration-level batching, FastAPI OpenAI-compatible API, ONNX Runtime & load testing | ✅ Complete |
+| **03** | [`03-monitoring-observability.ipynb`](03-monitoring-observability.ipynb) | Observability & Drift | Prometheus `Counter`/`Histogram`/`Gauge` registries, structured JSON logging, token/cost governance, PSI, Kolmogorov-Smirnov test, embedding centroid drift | ✅ Complete |
+| **04** | [`04-ci-cd-pipelines.ipynb`](04-ci-cd-pipelines.ipynb) | CI/CD & Registry | GitHub Actions ML workflows, `pytest` behavioral invariance & latency tests, `nbformat` CI quality gates, SHA-256 Model Registry, Canary auto-rollback | ✅ Complete |
 
 ---
 
