@@ -118,21 +118,21 @@ Before interacting with neural networks, a solid foundation in mathematics and p
 
 You don't need a PhD in mathematics — but understanding the underlying mechanics is crucial for debugging and optimization.
 
-- [ ] **Linear Algebra** 🟢
+- [x] **Linear Algebra** 🟢
   - Vectors, Matrices, Tensors
   - Matrix Multiplication & Dot Products
   - Eigenvectors & Eigenvalues
   - *Why it matters: This is how weights and embeddings work*
   - 📓 [`01-linear-algebra-for-ai.ipynb`](notebooks/01-foundations/01-linear-algebra-for-ai.ipynb)
 
-- [ ] **Calculus & Optimization** 🟢
+- [x] **Calculus & Optimization** 🟢
   - Derivatives & Partial Derivatives
   - The Chain Rule
   - Gradients & Gradient Descent
   - *Why it matters: The engine behind backpropagation*
   - 📓 [`02-calculus-and-optimization.ipynb`](notebooks/01-foundations/02-calculus-and-optimization.ipynb)
 
-- [ ] **Probability & Statistics** 🟢
+- [x] **Probability & Statistics** 🟢
   - Distributions: Normal, Poisson, Binomial
   - Bayes' Theorem
   - Variance, Standard Deviation, Covariance
@@ -143,40 +143,50 @@ You don't need a PhD in mathematics — but understanding the underlying mechani
 
 Python remains the undisputed king of AI. In 2026, proficiency goes beyond basic syntax — it requires writing efficient, asynchronous, and typed code.
 
-- [ ] **Python Mastery** 🟢
+- [x] **Python Mastery** 🟢
   - List comprehensions, generators, decorators
   - `asyncio` (crucial for parallel API calls in agentic workflows)
   - Type hinting with `typing` module
   - Context managers and error handling
   - 📓 [`04-python-mastery.ipynb`](notebooks/01-foundations/04-python-mastery.ipynb)
 
-- [ ] **NumPy Essentials** 🟢
+- [x] **NumPy Essentials** 🟢
   - N-dimensional arrays
   - Broadcasting and vectorized operations
   - Linear algebra with NumPy
   - 📓 [`05-numpy-essentials.ipynb`](notebooks/01-foundations/05-numpy-essentials.ipynb)
 
-- [ ] **Pandas & Polars** 🟢
+- [x] **Pandas & Polars** 🟢
   - DataFrames: loading, filtering, grouping, joining
   - Polars for high-performance data processing
   - Real-world data cleaning workflows
   - 📓 [`06-pandas-polars-data.ipynb`](notebooks/01-foundations/06-pandas-polars-data.ipynb)
 
-- [ ] **Git & Dev Tools** 🟢
+- [x] **Git & Dev Tools** 🟢
   - Git workflows: branching, merging, rebasing
   - GitHub: issues, PRs, Actions
   - Linux bash scripting basics
   - 📓 [`07-git-and-dev-tools.ipynb`](notebooks/01-foundations/07-git-and-dev-tools.ipynb)
 
+### Phase 1 Capstone & Custom Projects
+
+- [x] **Phase 1 Capstone Project** 🟢
+  - End-to-end telemetry analytics, SVD/PCA anomaly detector, scratch Adam risk classifier, Bayesian posterior tracking, and SHA-256 artifact manifests
+  - 📓 [`08-phase-1-capstone-project.ipynb`](notebooks/01-foundations/08-phase-1-capstone-project.ipynb)
+
+- [x] **Phase 1 Custom Projects Guide** 🟢
+  - 4 custom project blueprints (`MicroGrad-Matrix`, `AsyncPulse`, `LatentSearch`, `DataGuard-CLI`), 5-milestone roadmaps, runnable starters & rubric evaluator
+  - 📓 [`09-phase-1-custom-projects-guide.ipynb`](notebooks/01-foundations/09-phase-1-custom-projects-guide.ipynb)
+
 ### ✅ Phase 1 Completion Checklist
 
 When you can do all of the following, you're ready for Phase 2:
 
-- [ ] Explain what a matrix multiplication does and why it's central to neural networks
-- [ ] Compute a gradient by hand for a simple function
-- [ ] Write a Python async function that makes concurrent HTTP requests
-- [ ] Load, clean, and visualize a dataset with Pandas and Polars
-- [ ] Create a Git branch, make commits, and open a pull request
+- [x] Explain what a matrix multiplication does and why it's central to neural networks
+- [x] Compute a gradient by hand for a simple function
+- [x] Write a Python async function that makes concurrent HTTP requests
+- [x] Load, clean, and visualize a dataset with Pandas and Polars
+- [x] Create a Git branch, make commits, and open a pull request
 
 ---
 

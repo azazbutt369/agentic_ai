@@ -112,6 +112,22 @@ Key topics:
 
 ---
 
+## Phase 1 Capstone & Custom Projects 🏆
+
+### Phase 1 End-to-End Capstone Project 🟢
+
+Synthesizes all seven Phase 1 notebooks into a single runnable system: async telemetry ingestion, Pandas cleaning & rolling windows, SVD/PCA spectral anomaly detection, scratch Adam logistic risk classifier with finite-difference gradient checking, Bayesian Beta-Binomial posterior tracking, and SHA-256 artifact manifests.
+
+📓 **Notebook**: [`08-phase-1-capstone-project.ipynb`](https://github.com/YOUR_USERNAME/ai-engineer-roadmap-2026/blob/main/notebooks/01-foundations/08-phase-1-capstone-project.ipynb)
+
+### Custom Projects Blueprint & Builder Guide 🚀
+
+Encourages readers to build their own custom Phase 1 portfolio projects with 4 full blueprints (`MicroGrad-Matrix`, `AsyncPulse`, `LatentSearch`, `DataGuard-CLI`), 5-milestone roadmaps, runnable starter prototypes, and a portfolio rubric evaluator.
+
+📓 **Notebook**: [`09-phase-1-custom-projects-guide.ipynb`](https://github.com/YOUR_USERNAME/ai-engineer-roadmap-2026/blob/main/notebooks/01-foundations/09-phase-1-custom-projects-guide.ipynb)
+
+---
+
 ## ✅ Completion Checklist
 
 When you can do all of the following, you're ready for Phase 2:

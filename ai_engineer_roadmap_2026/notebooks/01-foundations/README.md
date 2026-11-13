@@ -18,6 +18,8 @@ Build the mathematical intuition and Python fluency that every AI concept builds
 | 5 | [`05-numpy-essentials.ipynb`](05-numpy-essentials.ipynb) | **NumPy** | N-dimensional arrays, broadcasting, vectorized ops |
 | 6 | [`06-pandas-polars-data.ipynb`](06-pandas-polars-data.ipynb) | **Pandas & Polars** | DataFrames, data wrangling, performance comparison |
 | 7 | [`07-git-and-dev-tools.ipynb`](07-git-and-dev-tools.ipynb) | **Git & Dev Tools** | Version control, GitHub workflows, bash scripting |
+| 8 | [`08-phase-1-capstone-project.ipynb`](08-phase-1-capstone-project.ipynb) | **Phase 1 Capstone Project** | End-to-end telemetry analytics, SVD/PCA anomaly detection, scratch Adam & Bayesian risk engine |
+| 9 | [`09-phase-1-custom-projects-guide.ipynb`](09-phase-1-custom-projects-guide.ipynb) | **Custom Projects Guide** | 4 custom project blueprints (`MicroGrad-Matrix`, `AsyncPulse`, `LatentSearch`, `DataGuard-CLI`), roadmaps & rubric evaluator |
 
 ---
 
@@ -25,7 +27,7 @@ Build the mathematical intuition and Python fluency that every AI concept builds
 
 ```
 Linear Algebra ──┐
-Calculus ─────────┼──▶ Python Mastery ──▶ NumPy ──▶ Pandas/Polars ──▶ Git
+Calculus ─────────┼──▶ Python Mastery ──▶ NumPy ──▶ Pandas/Polars ──▶ Git ──▶ 08 Capstone ──▶ 09 Custom Projects
 Probability ─────┘
 ```
 

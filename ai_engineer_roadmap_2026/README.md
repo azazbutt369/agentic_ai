@@ -270,6 +270,8 @@ Before interacting with neural networks, a solid foundation in mathematics and p
 | **NumPy** | N-dimensional arrays, broadcasting, vectorized operations | [`05-numpy-essentials.ipynb`](notebooks/01-foundations/05-numpy-essentials.ipynb) |
 | **Pandas & Polars** | DataFrames, data wrangling, high-performance data processing | [`06-pandas-polars-data.ipynb`](notebooks/01-foundations/06-pandas-polars-data.ipynb) |
 | **Git & Dev Tools** | Version control, GitHub workflows, bash scripting | [`07-git-and-dev-tools.ipynb`](notebooks/01-foundations/07-git-and-dev-tools.ipynb) |
+| **Phase 1 Capstone** | End-to-end telemetry analytics, SVD/PCA anomaly detector, scratch Adam & Bayesian risk | [`08-phase-1-capstone-project.ipynb`](notebooks/01-foundations/08-phase-1-capstone-project.ipynb) |
+| **Custom Projects Guide** | 4 Phase 1 project blueprints, 5-milestone roadmaps & rubric evaluator | [`09-phase-1-custom-projects-guide.ipynb`](notebooks/01-foundations/09-phase-1-custom-projects-guide.ipynb) |
 
 ---
 
@@ -395,13 +397,13 @@ Every notebook in this repository follows a consistent, production-quality struc
 
 | Phase | Count | Topics |
 |-------|-------|--------|
-| [01 — Foundations](notebooks/01-foundations/) | 7 | Math, Python, NumPy, Pandas, Polars, Git |
+| [01 — Foundations](notebooks/01-foundations/) | 9 | Math, Python, NumPy, Pandas, Polars, Git, Capstone & Custom Projects |
 | [02 — ML Fundamentals](notebooks/02-ml-fundamentals/) | 6 | Supervised/Unsupervised ML, scikit-learn, Feature Engineering |
-| [03 — Deep Learning](notebooks/03-deep-learning/) | 6 | PyTorch, CNNs, RNNs, Transformers |
+| [03 — Deep Learning](notebooks/03-deep-learning/) | 11 | PyTorch & TensorFlow, CNNs, RNNs, Transformers |
 | [04 — Generative AI](notebooks/04-generative-ai/) | 9 | Prompting, RAG, Agents, Fine-Tuning, DPO |
 | [05 — MLOps](notebooks/05-mlops-llmops/) | 4 | Docker, vLLM, Monitoring, CI/CD |
 | [06 — Advanced](notebooks/06-advanced-paradigms/) | 3 | Multimodal, Edge AI, Safety |
-| **Total** | **35** | |
+| **Total** | **42** | |
 
 ---
 
