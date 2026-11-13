@@ -198,21 +198,21 @@ Foundation models are powerful, but traditional ML is still cheaper and better f
 
 ### Core Concepts
 
-- [ ] **Supervised Learning** 🟡
+- [x] **Supervised Learning** 🟡
   - Linear Regression & Logistic Regression
   - Decision Trees & Random Forests
   - Gradient Boosting: XGBoost, LightGBM
   - *When to use: Structured/tabular data, classification, regression*
   - 📓 [`01-supervised-learning.ipynb`](notebooks/02-ml-fundamentals/01-supervised-learning.ipynb)
 
-- [ ] **Unsupervised Learning** 🟡
+- [x] **Unsupervised Learning** 🟡
   - K-Means Clustering
   - PCA (Principal Component Analysis)
   - t-SNE for embedding visualization
   - *When to use: Clustering, dimensionality reduction, data exploration*
   - 📓 [`02-unsupervised-learning.ipynb`](notebooks/02-ml-fundamentals/02-unsupervised-learning.ipynb)
 
-- [ ] **Evaluation Metrics** 🟡
+- [x] **Evaluation Metrics** 🟡
   - Classification: Accuracy, Precision, Recall, F1-Score, ROC-AUC
   - Regression: MSE, RMSE, MAE, R²
   - Knowing which metric to use for which problem
@@ -220,32 +220,42 @@ Foundation models are powerful, but traditional ML is still cheaper and better f
 
 ### The Workflow
 
-- [ ] **scikit-learn End-to-End** 🟡
+- [x] **scikit-learn End-to-End** 🟡
   - Pipelines: preprocess → train → evaluate → serialize
   - Cross-validation strategies
   - Model selection and comparison
   - 📓 [`04-scikit-learn-workflow.ipynb`](notebooks/02-ml-fundamentals/04-scikit-learn-workflow.ipynb)
 
-- [ ] **Feature Engineering** 🟡
+- [x] **Feature Engineering** 🟡
   - Handling missing data (imputation strategies)
   - Encoding categorical variables (OneHot, Ordinal, Target)
   - Feature scaling (StandardScaler, MinMaxScaler, RobustScaler)
   - Feature selection (mutual information, recursive elimination)
   - 📓 [`05-feature-engineering.ipynb`](notebooks/02-ml-fundamentals/05-feature-engineering.ipynb)
 
-- [ ] **Hyperparameter Tuning** 🟡
+- [x] **Hyperparameter Tuning** 🟡
   - Grid Search & Random Search
   - Bayesian Optimization with Optuna
   - Cross-validation + tuning best practices
   - 📓 [`06-hyperparameter-tuning.ipynb`](notebooks/02-ml-fundamentals/06-hyperparameter-tuning.ipynb)
 
+### Capstone & Custom Projects
+
+- [x] **Phase 2 Capstone Project** 🏆
+  - End-to-end Customer Churn & LTV ML System combining every Phase 2 concept with beginner-friendly analogies, leakage-free pipelines, Optuna tuning, cost-optimal thresholds, and 3 multi-panel visuals
+  - 📓 [`07-phase-2-capstone-project.ipynb`](notebooks/02-ml-fundamentals/07-phase-2-capstone-project.ipynb)
+
+- [x] **Phase 2 Custom Projects Guide** 🛠️
+  - 4 custom ML project blueprints (`HeartGuard`, `HomeValue-AI`, `ShopPersona`, `LeakageBuster`) with starter code, step-by-step roadmaps, 2 visual guides, and portfolio rubric
+  - 📓 [`08-phase-2-custom-projects-guide.ipynb`](notebooks/02-ml-fundamentals/08-phase-2-custom-projects-guide.ipynb)
+
 ### ✅ Phase 2 Completion Checklist
 
-- [ ] Train an XGBoost model that beats a logistic regression baseline on a real dataset
-- [ ] Explain the bias-variance tradeoff and demonstrate it with learning curves
-- [ ] Build a complete scikit-learn pipeline with preprocessing, training, and evaluation
-- [ ] Use Optuna to find optimal hyperparameters with cross-validation
-- [ ] Correctly choose between accuracy, F1, and ROC-AUC for a given problem
+- [x] Train an XGBoost model that beats a logistic regression baseline on a real dataset
+- [x] Explain the bias-variance tradeoff and demonstrate it with learning curves
+- [x] Build a complete scikit-learn pipeline with preprocessing, training, and evaluation
+- [x] Use Optuna to find optimal hyperparameters with cross-validation
+- [x] Correctly choose between accuracy, F1, and ROC-AUC for a given problem
 
 ---
 

@@ -16,6 +16,8 @@ Master classical machine learning — still the best choice for structured tabul
 | 4 | [`04-scikit-learn-workflow.ipynb`](04-scikit-learn-workflow.ipynb) | **scikit-learn Workflow** | Pipelines, cross-validation, model selection |
 | 5 | [`05-feature-engineering.ipynb`](05-feature-engineering.ipynb) | **Feature Engineering** | Missing data, encoding, scaling, feature selection |
 | 6 | [`06-hyperparameter-tuning.ipynb`](06-hyperparameter-tuning.ipynb) | **Hyperparameter Tuning** | Grid Search, Random Search, Optuna |
+| 7 | [`07-phase-2-capstone-project.ipynb`](07-phase-2-capstone-project.ipynb) | **Phase 2 Capstone Project** | Beginner-friendly end-to-end Churn & LTV ML System (EDA, Leakage-Free Pipelines, K-Means/PCA, Model Comparison, Optuna, Cost-Optimal Thresholds, 3 Visuals) |
+| 8 | [`08-phase-2-custom-projects-guide.ipynb`](08-phase-2-custom-projects-guide.ipynb) | **Custom Projects Guide** | 4 custom ML project blueprints, LeakageBuster starter kit, roadmap, 2 visuals |
 
 ---
 
@@ -23,7 +25,7 @@ Master classical machine learning — still the best choice for structured tabul
 
 ```
 Supervised Learning ──┐
-Unsupervised Learning ┼──▶ scikit-learn Workflow ──▶ Feature Engineering ──▶ Hyperparameter Tuning
+Unsupervised Learning ┼──▶ scikit-learn Workflow ──▶ Feature Engineering ──▶ Hyperparameter Tuning ──▶ Phase 2 Capstone ──▶ Custom Projects Guide
 Evaluation Metrics ───┘
 ```
 

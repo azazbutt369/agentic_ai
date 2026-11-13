@@ -99,6 +99,15 @@ The standard ML workflow:
 
 ---
 
+## Phase 2 Capstone & Custom Projects 🏆
+
+- **Phase 2 End-to-End Capstone Project** — Build a complete, beginner-friendly Customer Churn & Lifetime Value ML System combining EDA, leakage-free `ColumnTransformer` + `Pipeline`, K-Means & PCA segmentation, Logistic Regression / Random Forest / XGBoost / LightGBM comparison, Optuna Bayesian tuning, regression LTV prediction, business-cost threshold optimization, and 3 multi-panel visual dashboards.
+  📓 **Notebook**: [`07-phase-2-capstone-project.ipynb`](https://github.com/YOUR_USERNAME/ai-engineer-roadmap-2026/blob/main/notebooks/02-ml-fundamentals/07-phase-2-capstone-project.ipynb)
+- **Phase 2 Custom Projects Guide** — 4 custom ML project blueprints (`HeartGuard`, `HomeValue-AI`, `ShopPersona`, `LeakageBuster`) with working starter code, beginner-friendly checklists, 2 visual guides, and a 4-week build roadmap.
+  📓 **Notebook**: [`08-phase-2-custom-projects-guide.ipynb`](https://github.com/YOUR_USERNAME/ai-engineer-roadmap-2026/blob/main/notebooks/02-ml-fundamentals/08-phase-2-custom-projects-guide.ipynb)
+
+---
+
 ## ✅ Completion Checklist
 
 - [ ] Train an XGBoost model that beats a logistic regression baseline on a real dataset

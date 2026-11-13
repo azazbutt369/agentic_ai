@@ -290,6 +290,8 @@ Foundation models are powerful, but traditional ML is still cheaper and better f
 | **scikit-learn Workflow** | End-to-end ML pipeline: load, preprocess, train, evaluate, serialize | [`04-scikit-learn-workflow.ipynb`](notebooks/02-ml-fundamentals/04-scikit-learn-workflow.ipynb) |
 | **Feature Engineering** | Missing data, encoding, scaling, feature selection | [`05-feature-engineering.ipynb`](notebooks/02-ml-fundamentals/05-feature-engineering.ipynb) |
 | **Hyperparameter Tuning** | Grid Search, Random Search, Optuna, cross-validation | [`06-hyperparameter-tuning.ipynb`](notebooks/02-ml-fundamentals/06-hyperparameter-tuning.ipynb) |
+| **Phase 2 Capstone Project** | End-to-end Churn & LTV ML System (beginner-friendly + 3 visuals) | [`07-phase-2-capstone-project.ipynb`](notebooks/02-ml-fundamentals/07-phase-2-capstone-project.ipynb) |
+| **Custom Projects Guide** | 4 ML project blueprints, starter code, visual guides & roadmap | [`08-phase-2-custom-projects-guide.ipynb`](notebooks/02-ml-fundamentals/08-phase-2-custom-projects-guide.ipynb) |
 
 ---
 
@@ -398,12 +400,12 @@ Every notebook in this repository follows a consistent, production-quality struc
 | Phase | Count | Topics |
 |-------|-------|--------|
 | [01 — Foundations](notebooks/01-foundations/) | 9 | Math, Python, NumPy, Pandas, Polars, Git, Capstone & Custom Projects |
-| [02 — ML Fundamentals](notebooks/02-ml-fundamentals/) | 6 | Supervised/Unsupervised ML, scikit-learn, Feature Engineering |
+| [02 — ML Fundamentals](notebooks/02-ml-fundamentals/) | 8 | Supervised/Unsupervised ML, scikit-learn, Feature Engineering, Capstone & Custom Projects |
 | [03 — Deep Learning](notebooks/03-deep-learning/) | 11 | PyTorch & TensorFlow, CNNs, RNNs, Transformers |
 | [04 — Generative AI](notebooks/04-generative-ai/) | 9 | Prompting, RAG, Agents, Fine-Tuning, DPO |
 | [05 — MLOps](notebooks/05-mlops-llmops/) | 4 | Docker, vLLM, Monitoring, CI/CD |
 | [06 — Advanced](notebooks/06-advanced-paradigms/) | 3 | Multimodal, Edge AI, Safety |
-| **Total** | **42** | |
+| **Total** | **44** | |
 
 ---
 
