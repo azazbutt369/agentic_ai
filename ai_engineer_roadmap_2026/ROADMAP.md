@@ -267,55 +267,57 @@ This phase introduces representation learning, where AI extracts features automa
 
 ### The Deep Learning Stack
 
-- [ ] **PyTorch Fundamentals** 🟡
-  - Tensors: creation, operations, GPU transfer
-  - Autograd: computational graphs, automatic differentiation
-  - `nn.Module`, optimizers, training loops
-  - 📓 [`01-pytorch-fundamentals.ipynb`](notebooks/03-deep-learning/01-pytorch-fundamentals.ipynb)
+- [x] **PyTorch & TensorFlow Fundamentals** 🟡
+  - PyTorch: Tensors, dynamic Autograd graphs, `nn.Module`, `DataLoader`
+  - TensorFlow: `tf.GradientTape`, `@tf.function` XLA graphs, Keras 3 APIs, `tf.data`
+  - 📓 [`01-pytorch-fundamentals.ipynb`](notebooks/03-deep-learning/01-pytorch-fundamentals.ipynb) · [`02-tensorflow-fundamentals.ipynb`](notebooks/03-deep-learning/02-tensorflow-fundamentals.ipynb)
 
-- [ ] **Neural Networks from Scratch** 🟠
-  - Multi-Layer Perceptrons (MLPs)
-  - Activation functions: ReLU, GELU, Swish
-  - Loss functions: Cross-Entropy, MSE
-  - Backpropagation — implementing it manually
-  - 📓 [`02-neural-networks-from-scratch.ipynb`](notebooks/03-deep-learning/02-neural-networks-from-scratch.ipynb)
+- [x] **Neural Networks from Scratch** 🟠
+  - Multi-Layer Perceptrons (MLPs) in pure NumPy
+  - Activation functions, Cross-Entropy, manual matrix-calculus backpropagation
+  - Dual gradient verification against PyTorch & TensorFlow
+  - 📓 [`03-neural-networks-from-scratch.ipynb`](notebooks/03-deep-learning/03-neural-networks-from-scratch.ipynb)
 
 ### Architectures You Must Know
 
-- [ ] **CNNs (Convolutional Neural Networks)** 🟠
-  - Convolutional layers, pooling, feature maps
-  - ResNet, EfficientNet — transfer learning
-  - Image classification on real datasets
-  - 📓 [`03-cnns-image-classification.ipynb`](notebooks/03-deep-learning/03-cnns-image-classification.ipynb)
+- [x] **CNNs & Edge Vision (PyTorch & TFLite)** 🟠
+  - Convolutional layers, Depthwise-Separable Convolutions, ResNet, Grad-CAM
+  - Post-Training INT8 Quantization & `.tflite` Edge deployment
+  - 📓 [`04-cnns-computer-vision-pytorch.ipynb`](notebooks/03-deep-learning/04-cnns-computer-vision-pytorch.ipynb) · [`05-cnns-computer-vision-tensorflow.ipynb`](notebooks/03-deep-learning/05-cnns-computer-vision-tensorflow.ipynb)
 
-- [ ] **RNNs & LSTMs** 🟠
-  - Recurrent units, hidden states, vanishing gradients
-  - LSTMs and GRUs
-  - *Largely superseded by Transformers, but conceptually important*
-  - 📓 [`04-rnns-sequence-modeling.ipynb`](notebooks/03-deep-learning/04-rnns-sequence-modeling.ipynb)
+- [x] **RNNs, LSTMs & GRUs** 🟠
+  - Recurrent units, hidden states, vanishing gradients, sequence masking
+  - Bidirectional LSTM / GRU models
+  - 📓 [`06-rnns-sequence-modeling-pytorch.ipynb`](notebooks/03-deep-learning/06-rnns-sequence-modeling-pytorch.ipynb) · [`07-rnns-sequence-modeling-tensorflow.ipynb`](notebooks/03-deep-learning/07-rnns-sequence-modeling-tensorflow.ipynb)
 
-- [ ] **The Transformer** ⚡ 🟠
-  - Self-Attention mechanism
-  - Multi-Head Attention
-  - Positional Encoding
-  - Encoder-Decoder architecture
-  - *From the "Attention is All You Need" paper — the backbone of modern AI*
-  - 📓 [`05-transformers-attention.ipynb`](notebooks/03-deep-learning/05-transformers-attention.ipynb)
+- [x] **The Transformer & Attention** ⚡ 🟠
+  - Scaled Dot-Product Self-Attention & Multi-Head Attention
+  - Rotary Position Embeddings (RoPE), Pre-LN Transformer Blocks, Online Softmax
+  - Causal masking & Keras `MultiHeadAttention`
+  - 📓 [`08-transformers-attention-pytorch.ipynb`](notebooks/03-deep-learning/08-transformers-attention-pytorch.ipynb) · [`09-transformers-attention-tensorflow.ipynb`](notebooks/03-deep-learning/09-transformers-attention-tensorflow.ipynb)
 
-- [ ] **Training Best Practices** 🟠
-  - Learning rate scheduling (cosine, warmup)
-  - Regularization (dropout, weight decay, early stopping)
-  - Mixed precision training (fp16/bf16)
-  - Gradient accumulation
-  - 📓 [`06-training-best-practices.ipynb`](notebooks/03-deep-learning/06-training-best-practices.ipynb)
+- [x] **Training Best Practices & Deployment** 🟠
+  - Learning rate scheduling (Linear Warmup + Cosine Decay), AdamW, gradient clipping
+  - Mixed precision training, XLA JIT, checkpointing, TorchServe / TF Serving
+  - 📓 [`10-training-deployment-pytorch.ipynb`](notebooks/03-deep-learning/10-training-deployment-pytorch.ipynb) · [`11-training-deployment-tensorflow.ipynb`](notebooks/03-deep-learning/11-training-deployment-tensorflow.ipynb)
+
+### Capstone & Custom Projects
+
+- [x] **Phase 3 Capstone Project** 🏆
+  - End-to-end **OmniPulse** Multimodal Sensor & Defect Intelligence System combining NumPy-vs-Autograd verification, Depthwise CNN + Grad-CAM, BiGRU vs. RoPE Transformer, Online Softmax, Warmup Cosine LR, Affine INT8 quantization, and 3 multi-panel visual dashboards
+  - 📓 [`12-phase-3-capstone-project.ipynb`](notebooks/03-deep-learning/12-phase-3-capstone-project.ipynb)
+
+- [x] **Phase 3 Custom Projects Guide** 🛠️
+  - 4 runnable custom Deep Learning blueprints (`VisionEdge-Inspector`, `ChronoPulse-Forecaster`, `NanoTransformer-Zero`, `Autograd-Verify`) with 4-week sprint roadmap, visual scorecards, and portfolio rubric
+  - 📓 [`13-phase-3-custom-projects-guide.ipynb`](notebooks/03-deep-learning/13-phase-3-custom-projects-guide.ipynb)
 
 ### ✅ Phase 3 Completion Checklist
 
-- [ ] Implement a neural network from scratch (no `nn.Module`) and train it
-- [ ] Fine-tune a pretrained ResNet on a custom image dataset
-- [ ] Implement the self-attention mechanism from scratch in PyTorch
-- [ ] Explain why Transformers replaced RNNs for most sequence tasks
-- [ ] Train a model with mixed precision and measure the speedup
+- [x] Implement a neural network from scratch (no `nn.Module`) and verify gradients against Autograd
+- [x] Build a Depthwise-Separable CNN with Grad-CAM attribution and INT8 quantization
+- [x] Implement Self-Attention with RoPE and Online Softmax from scratch in PyTorch
+- [x] Compare RNN (`BiGRU`) vs. Transformer gradient dynamics across sequence time steps
+- [x] Train a multimodal model with Warmup Cosine LR scheduling and gradient clipping
 
 ---
 

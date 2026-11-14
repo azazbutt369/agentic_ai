@@ -21,15 +21,17 @@ Master representation learning and modern deep learning architectures across **b
 | **09** | [`09-transformers-attention-tensorflow.ipynb`](09-transformers-attention-tensorflow.ipynb) | **TensorFlow** | Transformers | Keras `MultiHeadAttention` layer, building Transformer Blocks in Keras, positional embeddings, KerasHub models | ✅ Complete |
 | **10** | [`10-training-deployment-pytorch.ipynb`](10-training-deployment-pytorch.ipynb) | **PyTorch** | Production | Cosine LR with Warmup, AdamW, gradient clipping & accumulation, mixed precision (`torch.amp`), checkpointing, TorchServe | ✅ Complete |
 | **11** | [`11-training-deployment-tensorflow.ipynb`](11-training-deployment-tensorflow.ipynb) | **TensorFlow** | Production | `@tf.function(jit_compile=True)` XLA compiler, `CosineDecay`, mixed precision, SavedModel, TF Serving (gRPC/REST) & TF.js | ✅ Complete |
+| **12** | [`12-phase-3-capstone-project.ipynb`](12-phase-3-capstone-project.ipynb) | **PyTorch + NumPy** | Capstone 🏆 | Beginner-friendly end-to-end OmniPulse Multimodal Defect & Sensor System (NumPy Backprop vs Autograd, Depthwise CNN + Grad-CAM, BiGRU vs RoPE Transformer, Online Softmax, Warmup Cosine LR, Affine INT8 PTQ, 3 Visuals) | ✅ Complete |
+| **13** | [`13-phase-3-custom-projects-guide.ipynb`](13-phase-3-custom-projects-guide.ipynb) | **PyTorch + NumPy** | Portfolio 🛠️ | 4 runnable custom Deep Learning blueprints (`VisionEdge-Inspector`, `ChronoPulse-Forecaster`, `NanoTransformer-Zero`, `Autograd-Verify`), 4-week sprint roadmap & 2 visuals | ✅ Complete |
 
 ---
 
 ## 🗺️ Learning Path Options
 
 ```
-                    ┌──▶ [PyTorch Track] ────▶ 01 ──▶ 04 (Vision) ──▶ 06 (RNN) ──▶ 08 (Transformer) ──▶ 10 (Serving)
-03. Math (NumPy) ───┤
-                    └──▶ [TensorFlow Track] ─▶ 02 ──▶ 05 (TFLite) ──▶ 07 (RNN) ──▶ 09 (Transformer) ──▶ 11 (Serving)
+                    ┌──▶ [PyTorch Track] ────▶ 01 ──▶ 04 (Vision) ──▶ 06 (RNN) ──▶ 08 (Transformer) ──▶ 10 (Serving) ──┐
+03. Math (NumPy) ───┤                                                                                                   ├──▶ 12 (Phase 3 Capstone) ──▶ 13 (Custom Projects Guide)
+                    └──▶ [TensorFlow Track] ─▶ 02 ──▶ 05 (TFLite) ──▶ 07 (RNN) ──▶ 09 (Transformer) ──▶ 11 (Serving) ──┘
 ```
 
 - **Comparative Path (Recommended)**: Learn each concept pair side-by-side (`01 & 02`, `04 & 05`, `06 & 07`, `08 & 09`, `10 & 11`) to master framework tradeoffs.

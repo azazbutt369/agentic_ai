@@ -302,12 +302,14 @@ Foundation models are powerful, but traditional ML is still cheaper and better f
 
 | Topic | What You'll Learn | Notebook |
 |-------|-------------------|----------|
-| **PyTorch Fundamentals** | Tensors, autograd, computational graphs, GPU acceleration | [`01-pytorch-fundamentals.ipynb`](notebooks/03-deep-learning/01-pytorch-fundamentals.ipynb) |
-| **Neural Networks from Scratch** | MLPs, activation functions (ReLU, GELU), loss functions, backpropagation | [`02-neural-networks-from-scratch.ipynb`](notebooks/03-deep-learning/02-neural-networks-from-scratch.ipynb) |
-| **CNNs** | Convolutional layers, ResNet, EfficientNet — image classification | [`03-cnns-image-classification.ipynb`](notebooks/03-deep-learning/03-cnns-image-classification.ipynb) |
-| **RNNs & LSTMs** | Sequential data, hidden states — conceptual foundation for Transformers | [`04-rnns-sequence-modeling.ipynb`](notebooks/03-deep-learning/04-rnns-sequence-modeling.ipynb) |
-| **The Transformer** ⚡ | Self-Attention, Multi-Head Attention, Positional Encoding, Encoder-Decoder | [`05-transformers-attention.ipynb`](notebooks/03-deep-learning/05-transformers-attention.ipynb) |
-| **Training Best Practices** | Learning rate scheduling, regularization, mixed precision, distributed training | [`06-training-best-practices.ipynb`](notebooks/03-deep-learning/06-training-best-practices.ipynb) |
+| **PyTorch & TF Fundamentals** | Tensors, Autograd, `tf.GradientTape`, XLA, Data Pipelines | [`01-pytorch-fundamentals.ipynb`](notebooks/03-deep-learning/01-pytorch-fundamentals.ipynb) · [`02-tensorflow-fundamentals.ipynb`](notebooks/03-deep-learning/02-tensorflow-fundamentals.ipynb) |
+| **Neural Networks from Scratch** | MLPs in pure NumPy, manual matrix calculus & dual grad check | [`03-neural-networks-from-scratch.ipynb`](notebooks/03-deep-learning/03-neural-networks-from-scratch.ipynb) |
+| **CNNs & Edge Vision** | Depthwise CNNs, ResNet, Grad-CAM, TFLite INT8 quantization | [`04-cnns-computer-vision-pytorch.ipynb`](notebooks/03-deep-learning/04-cnns-computer-vision-pytorch.ipynb) · [`05-cnns-computer-vision-tensorflow.ipynb`](notebooks/03-deep-learning/05-cnns-computer-vision-tensorflow.ipynb) |
+| **RNNs & Sequence Modeling** | Vanishing gradients, BiGRU/LSTM, sequence masking | [`06-rnns-sequence-modeling-pytorch.ipynb`](notebooks/03-deep-learning/06-rnns-sequence-modeling-pytorch.ipynb) · [`07-rnns-sequence-modeling-tensorflow.ipynb`](notebooks/03-deep-learning/07-rnns-sequence-modeling-tensorflow.ipynb) |
+| **Transformers & Attention** ⚡ | Self-Attention, MHA, RoPE, Online Softmax, Keras MHA | [`08-transformers-attention-pytorch.ipynb`](notebooks/03-deep-learning/08-transformers-attention-pytorch.ipynb) · [`09-transformers-attention-tensorflow.ipynb`](notebooks/03-deep-learning/09-transformers-attention-tensorflow.ipynb) |
+| **Training & Deployment** | Warmup Cosine LR, AdamW, Grad Clip, XLA, Serving | [`10-training-deployment-pytorch.ipynb`](notebooks/03-deep-learning/10-training-deployment-pytorch.ipynb) · [`11-training-deployment-tensorflow.ipynb`](notebooks/03-deep-learning/11-training-deployment-tensorflow.ipynb) |
+| **Phase 3 Capstone Project** 🏆 | End-to-end OmniPulse Multimodal Defect & Sensor System (3 visuals) | [`12-phase-3-capstone-project.ipynb`](notebooks/03-deep-learning/12-phase-3-capstone-project.ipynb) |
+| **Custom Projects Guide** 🛠️ | 4 runnable DL blueprints, 4-week sprint roadmap & 2 visuals | [`13-phase-3-custom-projects-guide.ipynb`](notebooks/03-deep-learning/13-phase-3-custom-projects-guide.ipynb) |
 
 ---
 
@@ -401,11 +403,11 @@ Every notebook in this repository follows a consistent, production-quality struc
 |-------|-------|--------|
 | [01 — Foundations](notebooks/01-foundations/) | 9 | Math, Python, NumPy, Pandas, Polars, Git, Capstone & Custom Projects |
 | [02 — ML Fundamentals](notebooks/02-ml-fundamentals/) | 8 | Supervised/Unsupervised ML, scikit-learn, Feature Engineering, Capstone & Custom Projects |
-| [03 — Deep Learning](notebooks/03-deep-learning/) | 11 | PyTorch & TensorFlow, CNNs, RNNs, Transformers |
+| [03 — Deep Learning](notebooks/03-deep-learning/) | 13 | PyTorch & TensorFlow, CNNs, RNNs, Transformers, Capstone & Custom Projects |
 | [04 — Generative AI](notebooks/04-generative-ai/) | 9 | Prompting, RAG, Agents, Fine-Tuning, DPO |
 | [05 — MLOps](notebooks/05-mlops-llmops/) | 4 | Docker, vLLM, Monitoring, CI/CD |
 | [06 — Advanced](notebooks/06-advanced-paradigms/) | 3 | Multimodal, Edge AI, Safety |
-| **Total** | **44** | |
+| **Total** | **46** | |
 
 ---
 
